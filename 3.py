@@ -1,4 +1,4 @@
-def lagr(n, t):
+def cube(n, t):
     a = []
     w = 1
     nn = n
@@ -13,7 +13,7 @@ def lagr(n, t):
             w = 0
         if len(a) > 7 and w:
             a.clear()
-            lagr(nn, d + 1)
+            cube(nn, d + 1)
             w = 0
     if w: print(*a)
-lagr(int(input()), 0)
+cube(int(input()), 0)
